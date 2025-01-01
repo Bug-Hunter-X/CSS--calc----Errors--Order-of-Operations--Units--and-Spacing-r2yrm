@@ -1,0 +1,20 @@
+/* Correct use of calc() */
+#example {
+  width: calc(100% - 20px);
+  height: calc(50vh - 10px);
+  background-color: lightblue; 
+}
+
+/* Incorrect use of calc() - Extra space*/
+#incorrect {
+  width: calc(100% - 20 px); /*Incorrect spacing*/
+  height: calc(50vh - 10px);
+  background-color: lightcoral;  /*Highlighting the incorrect element*/
+}
+
+/*Incorrect use of calc() - inconsistent units*/
+#inconsistent {
+  width: calc(50% - 10em); /*Inconsistent units*/
+  height: calc(50vh - 10px);
+  background-color: lightpink;/*Highlighting the incorrect element*/
+}
